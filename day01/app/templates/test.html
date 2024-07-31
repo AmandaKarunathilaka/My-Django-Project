@@ -1,0 +1,25 @@
+<html>
+	<head>
+        <style>
+            input[type=submit],select{
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #d67645;
+                border-radius: 5px;
+                box-sizing: border-box;
+                background-color: rgb(109, 177, 177);
+            }
+            
+        </style>
+    </head>
+	<body>
+		<h1><center>This is my first Form</center></h1>
+	<form method="POST">
+		{% csrf_token %}
+		{{form}}
+		<input type="submit" value="Save">
+	</form>
+	</body>
+</html>
